@@ -9,7 +9,7 @@
     <!--如果有用到annieUI组件类,则需要开启下面的js-->
     <script src="libs/annieUI.min.js"></script>
     <script src="libs/jquery-1.10.1.min.js"></script>
-    <script src="src/Main.js"></script>
+    <script src="src/f2xMain.min.js?v=1541869612782"></script>
     <style>
         html,body{
             width: 100%;
@@ -26,6 +26,15 @@
             position: absolute;
             top:45%;
             left: 45%;
+        }
+
+        .back_btn{
+
+            position: absolute;
+            width: 6%;
+            top:2.9%;
+            left: 5%;
+            display: none;
 
         }
 
@@ -35,6 +44,7 @@
 <body>
 
 <div class="per"></div>
+<div class="back_btn"><img src="resource/back_btn.png" width="100%"></div>
 
 <!--如果不想canvas全屏而是作为html中的一个标签,请设置div的style.width和style.height为实际值如<div id="annieEngine" style="width:320px;height:576px;line-height:0;font-size:0"></div>-->
 <div id="annieEngine" style="line-height:0;font-size:0"></div>
