@@ -26,7 +26,7 @@ window.addEventListener("load",function(){
 
                     stage.scaleMode=annie.StageScaleMode.FIXED_WIDTH
                     stage.resize()
-                    stage.y=400
+                    stage.y=380
 
                 }else{
 
