@@ -28,7 +28,7 @@ window.addEventListener("load",function(){
 
                     stage.scaleMode=annie.StageScaleMode.FIXED_WIDTH
                     stage.resize()
-                    stage.y=428
+                    stage.y=430
 
                 }else{
 
@@ -63,14 +63,8 @@ window.addEventListener("load",function(){
 
                     }
 
-
-
-
-
                     stage.addChild(page1_mc)
 
-                    //annie.initRes(stage,"scrollList","ScrollList");
-                    // window.scrollList=window.scrollList||{};
 
                     var sl=new annieUI.ScrollList(index.btn_MC,181,55,530,147,true,1);
                     sl.x=120;
@@ -150,6 +144,16 @@ window.addEventListener("load",function(){
                     }
 
 
+                    $('.back_btn').show()
+
+                    $('.back_btn').click(function(){
+
+                        stage.removeAllChildren()
+                        stage.removeAllEventListener()
+                        page1_init()
+
+
+                    })
 
                     stage.addChild(page2_mc)
 
@@ -305,6 +309,7 @@ window.addEventListener("load",function(){
 
                         stage.removeAllChildren()
                         stage.removeAllEventListener()
+                        $('.back_btn').hide()
                         page4_init()
 
 
