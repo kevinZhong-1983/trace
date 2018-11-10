@@ -21,12 +21,11 @@ window.addEventListener("load",function(){
             if(result.sceneId==result.sceneTotal){
 
 
-
                 if($(window).width()==375&&$(window).height()==724){
 
                     stage.scaleMode=annie.StageScaleMode.FIXED_WIDTH
                     stage.resize()
-                    stage.y=380
+                    stage.y=420
 
                 }else{
 
