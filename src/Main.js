@@ -11,7 +11,7 @@ window.addEventListener("load",function(){
     //stage.autoResize=true;
     //stage.autoSteering=true;
     stage.addEventListener(annie.Event.ON_INIT_STAGE,function (e) {
-    	//想要同时加载多个场景的话，Annie2x.loadScene的第一个参数可以传数组如 ["scene1","scene2",...]
+        //想要同时加载多个场景的话，Annie2x.loadScene的第一个参数可以传数组如 ["scene1","scene2",...]
         annie.loadScene("index",function(per){
             //加载进度
             trace("加载进度:"+per+"%");
@@ -22,12 +22,13 @@ window.addEventListener("load",function(){
             //需要同时加载多个模块时可以判断已经加载好的后直接出内容，其他偷偷在后台加载
             if(result.sceneId==result.sceneTotal){
 
+                $('.per').hide()
 
                 if($(window).width()==375&&$(window).height()==724){
 
                     stage.scaleMode=annie.StageScaleMode.FIXED_WIDTH
                     stage.resize()
-                    stage.y=425
+                    stage.y=428
 
                 }else{
 
@@ -38,16 +39,33 @@ window.addEventListener("load",function(){
 
 
 
-            	stage.addChild(new index.Index());
+                stage.addChild(new index.Index());
 
 
                 //页面1
 
-            	function page1_init(){
+                function page1_init(){
 
 
                     var page1_mc=new index.page1_MC()
                     var temp_Y=0
+
+
+
+                    //适配iphonex
+
+                    if($(window).width()==375&&$(window).height()==724){
+
+
+                        page1_mc.title_mc.y=684+30
+                        page1_mc.list_mc.y=639+30
+                        page1_mc.start_btn.y=965+30
+
+                    }
+
+
+
+
 
                     stage.addChild(page1_mc)
 
@@ -117,11 +135,19 @@ window.addEventListener("load",function(){
 
 
 
-            	    var page2_mc=new index.page2_MC()
+                    var page2_mc=new index.page2_MC()
                     var temp_y=0
                     var alpha_num=0
                     var timerCount=10
                     var maxDistance_arr=[1500,1950,1510,1510,1510,2030,1450,1510,1420,1510,1510,1510]
+
+
+                    if($(window).width()==375&&$(window).height()==724){
+
+
+                        page2_mc.text_mc.y=826+30
+
+                    }
 
 
 
@@ -151,7 +177,7 @@ window.addEventListener("load",function(){
                     function alpha_M(e){
 
 
-            	        if(Math.abs(e.stageY-temp_y)>100){
+                        if(Math.abs(e.stageY-temp_y)>100){
 
                             alpha_num+=0.01
 
@@ -179,8 +205,21 @@ window.addEventListener("load",function(){
 
                                 page2_mc.start_mc.gotoAndStop(temp_num+1)
 
-                                annie.Tween.to(page2_mc.free_btn, .5, {y:862,alpha:1,delay:.4,ease:annie.Tween.bounceOut()})
-                                annie.Tween.to(page2_mc.buy_btn, .5, {alpha:1,y:961,delay:.5,ease:annie.Tween.bounceOut()})
+                                if($(window).width()==375&&$(window).height()==724){
+
+
+                                    annie.Tween.to(page2_mc.free_btn, .5, {y:862+30,alpha:1,delay:.4,ease:annie.Tween.bounceOut()})
+                                    annie.Tween.to(page2_mc.buy_btn, .5, {alpha:1,y:961+30,delay:.5,ease:annie.Tween.bounceOut()})
+
+                                }else{
+
+
+                                    annie.Tween.to(page2_mc.free_btn, .5, {y:862,alpha:1,delay:.4,ease:annie.Tween.bounceOut()})
+                                    annie.Tween.to(page2_mc.buy_btn, .5, {alpha:1,y:961,delay:.5,ease:annie.Tween.bounceOut()})
+
+                                }
+
+
                                 annie.Tween.to(page2_mc.start_mc, 1, {alpha:1,delay:.3})
 
                                 page2_mc.alpha_mc.removeEventListener(annie.MouseEvent.MOUSE_DOWN,alpha_D)
@@ -277,7 +316,7 @@ window.addEventListener("load",function(){
                     function buy_C(e){
 
 
-
+                        location.href=" "
 
                     }
 
@@ -290,6 +329,15 @@ window.addEventListener("load",function(){
 
 
                     var page4_mc=new index.page4_MC()
+
+                    if($(window).width()==375&&$(window).height()==724){
+
+
+                        page4_mc.txt_mc.y=613+30
+
+                    }
+
+
                     stage.addChild(page4_mc)
 
                     var code=new annie.FloatDisplay();
@@ -298,20 +346,9 @@ window.addEventListener("load",function(){
                     page4_mc.txt_mc.qr_mc.addChild(code);
 
 
+
+
                 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
             }
