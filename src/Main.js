@@ -275,7 +275,7 @@ window.addEventListener("load",function(){
 
                     function buy_C(e){
 
-
+                        window.location.replace='http://wwww.163.com'
 
 
                     }
