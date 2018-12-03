@@ -44,7 +44,7 @@ if (isWeixin) {
     if(openid_num==null||openid_num==""){
 
 
-        location.href='/201812xmas-api/wx-auth.php?type=snsapi_base&return_url='+encodeURIComponent(window.location.href)
+        //location.href='/201812xmas-api/wx-auth.php?type=snsapi_base&return_url='+encodeURIComponent(window.location.href)
 
     }
 
