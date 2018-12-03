@@ -2,277 +2,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>唤醒圣诞绮肌</title>
+    <title>唤醒12星座肌肤圣诞奇迹</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="resource/style.css?v=5"/>
     <script src="libs/annieCore.min.js"></script>
     <!--如果有用到annieUI组件类,则需要开启下面的js-->
     <script src="libs/annieUI.min.js"></script>
     <script src="libs/jquery-1.10.1.min.js"></script>
-    <script src="src/Main.js?v=3"></script>
-    <script type="text/javascript" src="https://apis.map.qq.com/tools/geolocation/min?key=5LSBZ-25J3V-SY3PK-UK574-HDNTK-JWFJM&referer=biothermh5"></script>
-    <script src="http://biotherm.nurunci.com/201812xmas-api/shop.js"></script>
-    <style>
-        html,body{
-            width: 100%;
-            height: 100%;
-            margin: 0px;
-            border: 0px;
-            overflow: hidden;
-            position: absolute;
-            background-color: #ffffff;
-        }
+    <script type="text/javascript" src="https://3gimg.qq.com/lightmap/components/geolocation/geolocation.min.js"></script>
+    <script src="libs/index.js?v=10"></script>
+    <script src="src/f2xMain.min.js?v=1543821783876"></script>
 
-        .per{
+    <script src="/201812xmas-api/shop.js?v=1"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="libs/share.js?v=3"></script>
 
-            position: absolute;
-            top:45%;
-            left: 45%;
-        }
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'libs/analytics.js', 'ga');
 
-        .back_btn{
+        ga('create', 'UA-19617523-1', 'auto');
+        ga('send', 'pageview');
+    </script>
 
-            position: absolute;
-            width: 6%;
-            top:2.9%;
-            left: 5%;
-            display: none;
+    <script type="text/javascript">
+        var _nht_args={};
+        _nht_args.rta_k="y2txRomcUa";
+    </script>
+    <script type="text/javascript" src="//trace.rtbasia.com/nht_static.js"></script>
 
-        }
-
-        .form_mc{
-
-            position: absolute;
-            width: 640px;
-            height: 1136px;
-            /*background: rgba(0,0,0,.6);*/
-            display: none;
-
-        }
-
-
-        .title{
-
-            width:277px ;
-            height: 114px;
-            margin: 0 auto;
-            margin-top: 30px;
-
-        }
-
-        .name{
-
-            width: 399px;
-            height: 48px;
-            margin: 0 auto;
-            font-size: 24px;
-            color: white;
-            margin-top: 40px;
-
-        }
-
-        .mobile{
-
-            width: 399px;
-            height: 48px;
-            margin: 0 auto;
-            font-size: 24px;
-            color: white;
-            margin-top: 30px;
-
-        }
-
-        .code{
-
-            width: 399px;
-            height: 48px;
-            margin: 0 auto;
-            font-size: 24px;
-            color: white;
-            margin-top: 40px;
-
-
-        }
-
-
-        input{
-
-            width: 290px;
-            height: 48px;
-            font-size: 24px;
-            border: 1px solid #fff;
-            background: transparent;
-            color: white;
-            padding-left: 10px;
-        }
-
-        .position_title{
-
-            width: 399px;
-            height: 70px;
-            margin: 0 auto;
-            margin-top: 30px;
-
-
-        }
-
-        .province{
-
-            width: 403px;
-            height: 48px;
-            margin: 0 auto;
-            font-size: 24px;
-            color: white;
-            margin-top: 40px;
-
-        }
-
-        .city{
-
-            width: 403px;
-            height: 48px;
-            margin: 0 auto;
-            font-size: 24px;
-            color: white;
-            margin-top: 30px;
-
-        }
-        .counter{
-
-            width: 403px;
-            height: 48px;
-            margin: 0 auto;
-            font-size: 24px;
-            color: white;
-            margin-top: 30px;
-
-        }
-
-
-        select{
-
-            width: 310px;
-            height: 48px;
-            font-size: 24px;
-            border: 1px solid #fff;
-            background: transparent;
-            color: white;
-            padding-left: 10px;
-            border-radius: 0;
-
-        }
-
-        .txt_code{
-
-            width: 403px;
-            height: 48px;
-            margin: 0 auto;
-            font-size: 24px;
-            color: white;
-            margin-top: 30px;
-
-        }
-
-        .privacyPolicy_txt{
-
-            width: 403px;
-            height: 32px;
-            margin: 0 auto;
-            margin-top: 30px;
-
-        }
-
-        .txt{
-
-            width: 357px;
-            height: 32px;
-            display:inline-block;
-            margin-left: 10px;
-
-        }
-
-        .click_mc{
-
-            width: 32px;
-            height: 31px;
-            display:inline-block;
-        }
-
-        .submit{
-
-            width: 199px;
-            height: 55px;
-            margin: 0 auto;
-            margin-top: 50px;
-        }
-
-
-
-
-    </style>
 </head>
 <body>
 
+
+<div class="music_btn" id="audioBtn"></div>
+<audio src="resource/music.mp3" id="musicPlay" loop></audio>
+
 <div class="per"></div>
 <div class="back_btn"><img src="resource/back_btn.png" width="100%"></div>
-
 <div class="form_mc" id="form_mc">
-
     <div class="title"><img src="resource/p3-01.png"></div>
+    <div class="title2"><img src="resource/p3-01_1.png"></div>
     <div class="name">姓&nbsp;&nbsp;&nbsp;名 <input type="text" style="margin-left: 10px" placeholder="请输入姓名" id="name_txt"></div>
     <div class="mobile">手机号 <input type="number" style="margin-left: 10px" placeholder="请输入手机号码" id="mobile_txt"></div>
-    <div class="code"><input type="number" style="margin-left: 90px;width: 125px" id="phone_code"><span style="position:absolute;color: #333;width: 156px;height:52px;background: white;margin-left: 12px;line-height: 52px;text-align: center;font-size: 22px" id="smsCode_btn">获取验证码</span></div>
-    <div class="position_title"><img src="resource/p3-02.png"></div>
+    <div class="txt_code">
+        <input type="text" maxlength="4" style="width: 190px;margin-left: 100px" placeholder="图形验证码" id="verify_code">
+        <div style="position:absolute;display:inline-block;width: 120px;height: 48px;background: white"><img src="/201812xmas-api/captcha.php" id="pic_code"></div>
+    </div>
+    <div class="code">
+        <input type="number" style="margin-left: 100px;width: 135px" id="phone_code">
+        <div style="position:absolute;color: #333;width: 166px;height:48px;background: white;margin-left: 15px;line-height: 48px;text-align: center;font-size: 23px;display: inline-block;border: 1px solid #fff;" id="smsCode_btn">获取验证码</div>
+    </div>
+    <div class="position_title"><img src="resource/p3-02.png" width="100%"></div>
     <div class="province">省&nbsp;&nbsp;&nbsp;份
         <select style="margin-left: 10px" id="province">
-
-            <option value="value">选择省份</option>
-
+            <option value="-1">选择省份</option>
+            <option value="线上申领">线上申领</option>
         </select>
     </div>
     <div class="city">城&nbsp;&nbsp;&nbsp;市
         <select style="margin-left: 10px" id="city">
-
-            <option value="value">选择城市</option>
-
+            <option value="-1">选择城市</option>
         </select>
     </div>
     <div class="counter">柜&nbsp;&nbsp;&nbsp;台
         <select style="margin-left: 10px" id="district">
-
-            <option value="value">选择柜台</option>
-
+            <option value="-1">选择柜台</option>
         </select>
     </div>
-    <div class="txt_code">
-        <input type="text" maxlength="4" style="position:absolute;width: 386px;" placeholder="请输入图形验证码" id="verify_code">
-        <div style="position:absolute;width: 131px;height: 51px;background: white;right: 123px"><img src="http://biotherm.nurunci.com/201812xmas-api/captcha.php" id="pic_code"></div>
-    </div>
-
     <div class="privacyPolicy_txt">
 
         <div class="click_mc"><img src="resource/p3-06.png" id="click_img"></div>
-        <div class="txt"><img src="resource/p3-04.png"></div>
+        <div class="txt"><img src="resource/p3-04.png" width="100%" id="Private"></div>
     </div>
-
-    <div class="submit"><img src="resource/p3-07.png"></div>
-
-
+    <div class="submit"><img src="resource/p3-07.png" width="100%"></div>
 </div>
+<div class="orientation">
+    <img src="resource/AdviseVertical.png">
+</div>
+
+<!--<div class="data_box" id="data_box" style="position: absolute;color:red;width:200px;word-wrap:break-word">-->
+
+
+<!--</div>-->
 
 <!--如果不想canvas全屏而是作为html中的一个标签,请设置div的style.width和style.height为实际值如<div id="annieEngine" style="width:320px;height:576px;line-height:0;font-size:0"></div>-->
 <div id="annieEngine" style="line-height:0;font-size:0;"></div>
-
-
-<script>
-
-
-
-
-
-</script>
-
-
 
 </body>
 </html>

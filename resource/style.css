@@ -1,0 +1,241 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    border: 0px;
+    overflow: hidden;
+    position: absolute;
+    background-color: #040e30;
+    font-family: "Heiti SC";
+}
+
+.per{
+
+    position: absolute;
+    top:45%;
+    left: 45%;
+    color: white;
+}
+
+.back_btn{
+
+    position: absolute;
+    width: 6%;
+    top:2.9%;
+    left: 5%;
+    display: none;
+
+}
+
+
+/*.music_btn{*/
+
+   /*position: absolute;*/
+    /*width: 5.5%;*/
+    /*top: 3.5%;*/
+    /*right: 5%;*/
+
+
+
+/*}*/
+
+.music_btn{position:absolute;background: url("../resource/off.png") no-repeat;background-size:100%;width:5.5%;height:5.5%;top:3.5%;right:5%;z-index: 99;}
+
+.form_mc{
+
+    position: absolute;
+    width: 640px;
+    height: 1136px;
+    /*background: rgba(0,0,0,.6);*/
+    display: none;
+
+}
+
+
+.title{
+
+    width:277px ;
+    height: 81px;
+    margin: 0 auto;
+    margin-top: 50px;
+
+}
+.title2{
+
+    width:66px ;
+    height: 22px;
+    margin: 0 auto;
+    margin-top: 20px;
+
+}
+
+
+
+.name{
+
+    width: 435px;
+    height: 48px;
+    margin: 0 auto;
+    font-size: 28px;
+    color: white;
+    margin-top: 40px;
+
+}
+
+.mobile{
+
+    width: 435px;
+    height: 48px;
+    margin: 0 auto;
+    font-size: 28px;
+    color: white;
+    margin-top: 30px;
+
+}
+
+.code{
+
+    width: 435px;
+    height: 48px;
+    margin: 0 auto;
+    font-size: 28px;
+    color: white;
+    margin-top: 40px;
+
+
+}
+
+
+input{
+
+    width: 315px;
+    height: 48px;
+    font-size: 28px;
+    border: 1px solid #fff;
+    background: transparent;
+    color: white;
+    padding: 0;
+    padding-left: 10px;
+    border-radius: 0;
+
+}
+
+.position_title{
+
+    width: 429px;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+
+
+}
+
+.province{
+
+    width: 435px;
+    height: 48px;
+    margin: 0 auto;
+    font-size: 28px;
+    color: white;
+    margin-top: 40px;
+
+}
+
+.city{
+
+    width: 435px;
+    height: 48px;
+    margin: 0 auto;
+    font-size: 28px;
+    color: white;
+    margin-top: 30px;
+
+}
+.counter{
+
+    width: 435px;
+    height: 48px;
+    margin: 0 auto;
+    font-size: 28px;
+    color: white;
+    margin-top: 30px;
+
+}
+
+
+select{
+
+    width: 330px;
+    height: 55px;
+    font-size: 28px;
+    border: 1px solid #fff;
+    background: transparent;
+    color: white;
+    padding-left: 10px;
+    border-radius: 0;
+
+}
+
+.txt_code{
+
+    width: 435px;
+    height: 48px;
+    margin: 0 auto;
+    font-size: 28px;
+    color: white;
+    margin-top: 30px;
+
+}
+
+.privacyPolicy_txt{
+
+    width: 435px;
+    height: 32px;
+    margin: 0 auto;
+    margin-top: 30px;
+
+}
+
+.txt{
+
+    width: 387px;
+    height: 52px;
+    display:inline-block;
+    margin-left: 10px;
+
+}
+
+.click_mc{
+
+    width: 32px;
+    height: 31px;
+    display:inline-block;
+}
+
+.submit{
+
+    width: 239px;
+    height: 105px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.orientation{
+
+    width: 100%;
+    height: 100%;
+    background: black;
+    display: none;
+
+
+}
+
+
+.orientation img{
+
+    position: absolute;
+    width: 45%;
+    left: 25%;
+    top: 6%;
+
+}
