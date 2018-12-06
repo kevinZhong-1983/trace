@@ -1,0 +1,335 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    border: 0px;
+    overflow: hidden;
+    position: absolute;
+    background-color: #852c25;
+    font-family: "Heiti SC";
+}
+
+img{vertical-align:top}
+
+.main{
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.page1{
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+
+
+}
+
+.bg{
+
+    position: absolute;
+    width: 9rem;
+    height: 12.36rem;
+    left: 50%;
+    margin-left: -4.5rem;
+
+
+}
+
+.black_mc{
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.7);
+}
+
+
+
+.loading{background:#852c25;position:fixed;top:0;left:0;width:100%;height:100%;z-index: 100;}
+.loading .icon{width:1rem;height:1rem;position:absolute;top:0;left:0;right:0;bottom:0;margin:auto;font-size:.3rem;text-align:center;line-height:1rem;color:white;}
+.loading .icon span{display:block;position:absolute; width:.8rem;height:.8rem;border-radius:50%;box-shadow:0 2px 0 0 #ccc;top:.1rem;left:.1rem;animation:rotate 1s infinite linear;-webkit-animation:rotate 1s infinite linear;}
+
+
+.orientation{
+
+    width: 100%;
+    height: 100%;
+    background: black;
+    display: none;
+
+
+}
+
+
+.orientation img{
+
+    position: absolute;
+    width: 45%;
+    left: 25%;
+    top: 6%;
+
+}
+
+
+.form_mc{
+
+    position: relative;
+    width: 6.40rem;
+    height: 11.36rem;
+    display: block;
+    margin: 0 auto;
+
+}
+
+
+.title{
+
+    position: relative;
+    width:5.44rem ;
+    height: .84rem;
+    margin: 0 auto;
+    margin-top: .5rem;
+
+}
+.title2{
+
+    position: relative;
+    width:.66rem ;
+    height: .21rem;
+    margin: 0 auto;
+    margin-top: .2rem;
+
+}
+
+
+
+.name{
+
+    width: 4.35rem;
+    height: .48rem;
+    margin: 0 auto;
+    font-size: .28rem;
+    color: white;
+    margin-top: .40rem;
+
+}
+
+.mobile{
+
+    width: 4.35rem;
+    height: .48rem;
+    margin: 0 auto;
+    font-size: .28rem;
+    color: white;
+    margin-top: .30rem;
+
+}
+
+.code{
+
+    width: 4.35rem;
+    height: .48rem;
+    margin: 0 auto;
+    font-size: .28rem;
+    color: white;
+    margin-top: .40rem;
+
+
+}
+
+
+input{
+
+    width: 3.1rem;
+    height: .48rem;
+    font-size: .28rem;
+    border: 1px solid #fff;
+    background: transparent;
+    color: white;
+    /*padding: 0;*/
+    padding-left: .10rem;
+    border-radius: 0;
+
+}
+
+.position_title{
+
+    width: 4.29rem;
+    height: 1rem;
+    margin: 0 auto;
+    margin-top: .30rem;
+
+
+}
+
+.province{
+
+    width: 4.35rem;
+    height: .48rem;
+    margin: 0 auto;
+    font-size: .28rem;
+    color: white;
+    margin-top: .40rem;
+
+}
+
+.city{
+
+    width: 4.35rem;
+    height: .48rem;
+    margin: 0 auto;
+    font-size: .28rem;
+    color: white;
+    margin-top: .30rem;
+
+}
+.counter{
+
+    width: 4.35rem;
+    height: .48rem;
+    margin: 0 auto;
+    font-size: .28rem;
+    color: white;
+    margin-top: .30rem;
+
+}
+
+
+select{
+
+    width: 3.30rem;
+    height: .55rem;
+    font-size: .28rem;
+    border: 1px solid #fff;
+    background: transparent;
+    color: white;
+    padding-left: .10rem;
+    border-radius: 0;
+
+}
+
+.txt_code{
+
+    width: 4.35rem;
+    height: .48rem;
+    margin: 0 auto;
+    font-size: .28rem;
+    color: white;
+    margin-top: .30rem;
+
+}
+
+.privacyPolicy_txt{
+
+    width: 4.35rem;
+    height: .32rem;
+    margin: 0 auto;
+    margin-top: .30rem;
+
+}
+
+.txt{
+
+    width: 3.87rem;
+    height: .52rem;
+    float: left;
+    margin-left: .10rem;
+
+}
+
+.click_mc{
+
+    width: .32rem;
+    height: .31rem;
+    float: left;
+}
+
+.submit{
+
+    width: 2.08rem;
+    height: .60rem;
+    margin: 0 auto;
+    margin-top: .50rem;
+}
+
+.guize{
+
+    position: relative;
+    width: 4.88rem;
+    height: 9.24rem;
+    margin: 0 auto;
+    margin-top: .5rem;
+    display: none;
+
+}
+
+
+.page2{
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+
+}
+
+.page2 .title{
+
+
+    position: relative;
+    width: 3.56rem;
+    height: .56rem;
+    margin: 0 auto;
+    margin-top: .4rem;
+
+}
+
+.page2 .title2{
+
+
+    position: relative;
+    width: 5.2rem;
+    height: .56rem;
+    margin: 0 auto;
+    margin-top: .4rem;
+    display: none;
+
+
+}
+
+.page2 .button_mc{
+
+    position: absolute;
+    width: 4.66rem;
+    height: 2.28rem;
+    bottom: 18%;
+    left: 50%;
+    margin-left: -2.33rem;
+
+}
+
+.page2 .qr_mc{
+
+    position: relative;
+    width: 1rem;
+    height: 1rem;
+    margin: 0 auto;
+    margin-top: .2rem;
+
+}
+
+.page2 .tips_mc{
+
+    position: relative;
+    width: 2.09rem;
+    height: .44rem;
+    margin: 0 auto;
+    margin-top: .1rem;
+
+}
