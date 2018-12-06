@@ -253,10 +253,12 @@ select{
 
 .submit{
 
+    position: absolute;
     width: 2.08rem;
     height: .60rem;
-    margin: 0 auto;
-    margin-top: .50rem;
+    left: 50%;
+    margin-left: -1.04rem;
+    bottom: 10%;
 }
 
 .guize{
